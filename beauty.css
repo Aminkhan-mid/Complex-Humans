@@ -1,0 +1,65 @@
+.hidden {
+    display: none;
+}
+body {
+    background-image: url(https://i.pinimg.com/564x/c0/a0/8b/c0a08b41006bf6acc5c59f34f35a5c6c.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3 {
+    text-align: center;
+    color: white;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Reduced gap for mobile responsiveness */
+    margin: 20px auto;
+    flex-wrap: wrap; /* Allows buttons to wrap in smaller screens */
+}
+.pop {
+    transition: transform 0.2s;
+}
+.pop:hover {
+    transform: scale(1.1);
+}
+.human, .bird {
+    width: 200px; /* Adjusted width for better mobile compatibility */
+    height: 150px; /* Adjusted height for better mobile compatibility */
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: transparent;
+}
+.humanImage, .birdImage {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.text-container {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 600px;
+    width: 90%; /* Responsive width */
+    color: rgb(0, 0, 0);
+    background-image: url(https://i.pinimg.com/564x/57/71/98/57719819ffc7f97f4f82c1d1456c0f1b.jpg);
+    background-size: cover; /* Ensure the background image covers the area */
+    border-radius: 10px;
+    padding: 20px; /* Added padding for better spacing */
+    font-size: large; /* Responsive font size */
+}
+.text {
+    display: none;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.text:not(.hidden) {
+    display: block;
+}
+.text-container.active {
+    display: block;
+}
